@@ -1,0 +1,6 @@
+   <nav>
+      <button type="button" id="step1" style="width: 30%" routerLink="step1">Step 1</button>
+      <button type="button" id="step2" style="width: 30%" routerLink="step2" [disabled]="checkout.code == ''">Step 2</button>
+      <button type="button" id="step3" style="width: 30%" routerLink="step3" [disabled]="checkout.config.description  == ''">Step 3</button>
+    </nav>
+   <router-outlet></router-outlet>
