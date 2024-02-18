@@ -41,7 +41,7 @@ export class CarModelComponent {
   
     /**
      * @description Method to select/change model and match with carData.Matched data stored in checkout variable 
-     *  and pass checkout variable to setSummaryData for next steps2 and step3 reference.
+     *  and pass checkout variable to setCheckouData for next steps2 and step3 reference.
      * @param modelCode 
      */
     onModelChange(modelCode: string) {
@@ -79,7 +79,7 @@ export class CarModelComponent {
      * @returns It return selected car image 
      */
     createCarImageURL(carModelCode: string, colorCode: string) {
-      // Sanitize input parameters to prevent potential security vulnerabilities
+      // Sanitize input parameters to prevent security vulnerabilities
       const sanitizedCarModelCode = encodeURIComponent(carModelCode);
       const sanitizedColorCode = encodeURIComponent(colorCode);
       // Construct the URL using template literals
